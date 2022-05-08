@@ -58,7 +58,7 @@ function updateLedger() {
           }
 
           const transaction = db.transaction(['ledger'], 'readwrite');
-          const objectStore = transaction.objectStore('new_pizza');
+          const objectStore = transaction.objectStore('ledger');
           // clear all items in your store
           objectStore.clear();
         })
